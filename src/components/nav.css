@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 5%;
+}
+
+a {
+    margin: 10px;
+}
