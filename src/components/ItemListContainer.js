@@ -15,7 +15,7 @@ export default function ItemListContainer({value}) {
     const [loading, setLoading] = useState(false);
 
     const onAdd = () =>{    
-        alert('Gracias por comprar')
+        alert('Gracias por la compra')
     }
 
     useEffect(() => {
