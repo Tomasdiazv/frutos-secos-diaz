@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import Product from "../data/product";
 import ItemDetail from "./itemDetail";
+import { useParams } from 'react-router-dom';
 
 const promesa = new Promise((res, rej) => {
     setTimeout(() => {
@@ -10,6 +11,9 @@ const promesa = new Promise((res, rej) => {
 
 
 const ItemDetailContainer = ({value}) => {
+
+    const {categoryId} = useParams();
+
     const [product, setProduct] = useState([])
     const [loading, setLoading] = useState(false);
 
@@ -19,7 +23,7 @@ const ItemDetailContainer = ({value}) => {
             setProduct(response);
             setLoading(false);
         });
-    }, []);
+    }, [categoryId]);
 
     if (loading){
         return (
