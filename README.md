@@ -1,1 +1,1 @@
-Hola Manuel, intente crear mi filtro para poder hacer entra del desafio y no se me ocurrio como, por eso entragre el codigo hasta donde consegui y me pondre a trabajar en hacerlo con la API.
+Hola Manuel, se agrega la libreria con la que esta trabajando el profe, se modifican algunos parametros ya que se recrea codigo visto en clases.

@@ -13,7 +13,7 @@ const styles = {
     justifyContent: "center",
     alignItems: "center",
     margin: 20,
-    backgroundColor: "rgba(249, 220, 92, 0.3)"
+    backgroundColor: "#D3D3D3"
   },
   title: {
     textOverflow: "ellipsis",

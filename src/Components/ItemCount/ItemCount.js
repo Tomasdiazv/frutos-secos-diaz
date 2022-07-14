@@ -2,32 +2,29 @@ import React, { useState } from 'react'
 
 const ItemCount = ({ initial, onAdd, stock }) => {
 
-    const [count, setCount] = useState(initial);
+    const [Producto, setProducto] = useState(initial);
 
-    const handlerClickAdd = () => {
-        if (count < stock) {
-            setCount(count + 1);
-        }
+    const sumar = () => {
+        Producto < stock && setProducto (Producto + 1)
+        Producto >= stock && alert('No hay stock')
+    }
+    
+    const restar = () => {
+        Producto > 0 && setProducto (Producto - 1)
     }
 
-    const handlerClickSubtrack = () => {
-        if (count > 1) {
-            setCount(count - 1);
-        }
-    }
-
-    const handlerClickAddToCart = () => {
-        onAdd(count);
+    const agregar = () => {
+        onAdd(Producto);
     }
 
     return (
         <div style={styles.container}>
             <div style={styles.containerButtons}>
-                <button style={styles.button} onClick={() => handlerClickSubtrack()}>-</button>
-                <h2>{count}</h2>
-                <button style={styles.button} onClick={() => handlerClickAdd()}>+</button>
+                <button style={styles.button} onClick={() => restar()}>-</button>
+                <h2>{Producto}</h2>
+                <button style={styles.button} onClick={() => sumar()}>+</button>
             </div>
-            <button style={styles.buttonAdd} onClick={() => handlerClickAddToCart()}>Agregar al carrito</button>
+            <button style={styles.buttonAdd} onClick={() => agregar()}>Agregar al carrito</button>
         </div>
     );
 }
@@ -44,7 +41,7 @@ const styles = {
         width: "40px",
         height: "40px",
         borderRadius: "50%",
-        backgroundColor: "black",
+        backgroundColor: "grey",
         color: "white",
         fontSize: "20px",
         fontWeight: "bold",
@@ -59,8 +56,8 @@ const styles = {
     buttonAdd: {
         width: "30%",
         height: "50px",
-        borderRadius: "50%",
-        backgroundColor: "green",
+        borderRadius: "2%",
+        backgroundColor: "grey",
         color: "white",
         fontSize: "20px",
         fontWeight: "bold",

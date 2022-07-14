@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import { cartContext } from '../../Context/CartContext';
 
 
@@ -9,7 +9,7 @@ const CartWidget = () => {
 
   return (
     <>
-      <ShoppingCartIcon color="success" fontSize="large" />
+      <ShoppingBagIcon color="success" fontSize="large" />
       <p>{qtyProducts}</p>
     </>
   )
