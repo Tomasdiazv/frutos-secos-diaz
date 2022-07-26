@@ -1,1 +1,1 @@
-Hola Manuel, se agrega la libreria con la que esta trabajando el profe, se modifican algunos parametros ya que se recrea codigo visto en clases.
+Proyecto con fakeapi para entrega de desafios con firebase.

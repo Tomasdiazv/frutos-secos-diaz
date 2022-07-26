@@ -13,10 +13,10 @@ const viewport = {
 const Navbar = () => {
 
     const categories = [
-        { name: "electronica", id: 0, route: "/category/electronica" },
-        { name: "joyeria", id: 1, route: "/category/joyeria" },
-        { name: "ropa hombre", id: 2, route: "/category/ropa hombre" },
-        { name: "ropa mujer", id: 3, route: "/category/ropa mujer" },
+        { name: "electronics", id: 0, route: "/category/electronics" },
+        { name: "jewelery", id: 1, route: "/category/jewelery" },
+        { name: "men's clothing", id: 2, route: "/category/men's clothing" },
+        { name: "women's clothing", id: 3, route: "/category/women's clothing" },
     ];
 
     return (
